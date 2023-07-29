@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<div class="abc">
+    <h1>Welcome <%= name %></h1>
+    <h2 style="color: black;">Qr code </h2>
+    <img src="/css/qr_img.png" />
+</div>
+<form action="/getName" method="Post">
+    <label>Enter Your Name</label>
+    <input type="text" name="yourName">
+    <button type="submit">click to generate</button>
+</form>
+<h3 class="abc">Generate Qr for Your Name</h3>
+<%- include("partials/footer.ejs") %>
